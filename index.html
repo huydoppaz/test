@@ -1,11 +1,12 @@
 <html lang="en">
     <body>
-        <h1>Game Over</h1>
+        <h1>Game Over123</h1>
 
         
     </body>
-	<script src="https://cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js"></script>
 <script>
+ThumbmarkJS.setOption('exclude', ['webgl', 'system.browser.version','canvas'])
 ThumbmarkJS.getFingerprint().then(
     function(fp) {
         console.log(fp);
@@ -15,10 +16,4 @@ ThumbmarkJS.getFingerprint().then(
 
 <!-- or -->
 
-<script>
-import('https://cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js')
-.then(() => {
-    ThumbmarkJS.getFingerprint().then((fp) => { console.log(fp)})
-})
-</script>
 </html>
